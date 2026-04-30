@@ -39,49 +39,42 @@
   @media (max-width: 720px) { .nav-links { display: none; } }
 
   /* HERO */
-  .hero { padding: 90px 0 40px; }
-  .hero h1 { font-size: clamp(40px, 7vw, 88px); margin: 16px 0 18px; }
+  .hero { padding: 56px 0 28px; }
+  .hero h1 { font-size: clamp(38px, 6.6vw, 78px); margin: 14px 0 14px; }
   .hero h1 em { font-style: normal; color: var(--accent); }
-  .hero p.lede { font-size: clamp(17px, 2vw, 21px); color: var(--ink-dim); max-width: 720px; line-height: 1.5; margin: 0 0 36px; }
+  .hero p.kicker { font-size: clamp(16px, 1.8vw, 20px); color: var(--ink-dim); max-width: 720px; line-height: 1.45; margin: 0; }
+  .narrative { padding: 36px 0 14px; }
+  .narrative p.lede { font-size: clamp(16px, 1.7vw, 19px); color: var(--ink-dim); max-width: 760px; line-height: 1.6; margin: 0 0 22px; }
   .hero-meta { display: flex; gap: 28px; flex-wrap: wrap; font-size: 13px; color: var(--ink-dim); }
   .hero-meta b { color: var(--ink); font-weight: 600; }
 
-  /* BEFORE/AFTER */
-  .compare { padding: 50px 0 30px; }
-  .compare-head { text-align: center; margin-bottom: 36px; }
+  /* SPLIT PAIR (image on top, caption panel below — clean, no overlap) */
+  .split-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  @media (max-width: 720px) { .split-pair { grid-template-columns: 1fr; } }
+  .split-card { display: flex; flex-direction: column; background: var(--bg-2); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; }
+  .split-card .pic { position: relative; aspect-ratio: 16/10; overflow: hidden; background: #000; }
+  .split-card.tall .pic { aspect-ratio: 4/5; }
+  .split-card .pic img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .split-card .pic .tag { position: absolute; top: 14px; left: 14px; background: rgba(0,0,0,0.85); border: 1px solid rgba(255,255,255,0.18); color: var(--ink); font-size: 11px; letter-spacing: 2px; padding: 6px 11px; border-radius: 999px; text-transform: uppercase; font-weight: 500; }
+  .split-card.before .pic .tag { color: #ff8a8a; }
+  .split-card.after .pic .tag { color: var(--accent); }
+  .split-card .body { padding: 22px 24px 24px; flex: 1; }
+  .split-card .body h3 { margin: 0 0 6px; font-size: 18px; font-weight: 600; line-height: 1.3; }
+  .split-card .body p { margin: 0; color: var(--ink-dim); font-size: 14px; line-height: 1.55; }
+
+  .compare-head { text-align: center; margin: 0 0 28px; }
   .compare-head h2 { font-size: clamp(28px, 4.5vw, 44px); margin: 8px 0; }
-  .compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; align-items: stretch; }
-  @media (max-width: 720px) { .compare-grid { grid-template-columns: 1fr; } }
-  .card-img { position: relative; border: 1px solid var(--line); border-radius: 16px; overflow: hidden; background: #000; aspect-ratio: 4/5; }
-  .card-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
-  .card-img .tag { position: absolute; top: 14px; left: 14px; background: rgba(0,0,0,0.78); border: 1px solid rgba(255,255,255,0.15); color: var(--ink); font-size: 11px; letter-spacing: 2px; padding: 6px 11px; border-radius: 999px; text-transform: uppercase; }
-  .card-img.before .tag { color: #ff8a8a; }
-  .card-img.after .tag { color: var(--accent); }
-  .card-img .caption { position: absolute; bottom: 0; left: 0; right: 0; padding: 18px 18px 16px; background: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0)); }
-  .card-img .caption h3 { margin: 0 0 4px; font-size: 18px; font-weight: 600; }
-  .card-img .caption p { margin: 0; font-size: 13px; color: var(--ink-dim); line-height: 1.4; }
-  .arrow-row { display: flex; justify-content: center; padding: 14px 0 0; color: var(--accent); font-size: 14px; letter-spacing: 4px; text-transform: uppercase; }
+  .arrow-row { display: flex; justify-content: center; padding: 28px 0 0; color: var(--accent); font-size: 13px; letter-spacing: 4px; text-transform: uppercase; }
 
-  /* WIDE STOREFRONT BAND */
-  .band { position: relative; margin: 60px 0; border-radius: 20px; overflow: hidden; border: 1px solid var(--line); aspect-ratio: 16/9; }
-  .band img { width: 100%; height: 100%; object-fit: cover; display: block; }
-  .band .band-caption { position: absolute; left: 0; right: 0; bottom: 0; padding: 32px 36px 28px; background: linear-gradient(to top, rgba(0,0,0,0.92) 10%, rgba(0,0,0,0.4) 70%, rgba(0,0,0,0)); }
-  .band .band-caption .eyebrow { margin-bottom: 8px; }
-  .band .band-caption h3 { font-family: 'Fraunces', serif; font-weight: 700; font-size: clamp(22px, 3.2vw, 34px); margin: 0 0 6px; letter-spacing: -0.01em; line-height: 1.1; }
-  .band .band-caption p { margin: 0; color: var(--ink-dim); font-size: clamp(14px, 1.6vw, 16px); max-width: 720px; line-height: 1.5; }
-  @media (max-width: 720px) { .band { aspect-ratio: 4/5; } .band .band-caption { padding: 22px 20px 20px; } }
-
-  /* WIDE BLOCK COMPARE */
-  .block-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
-  @media (max-width: 720px) { .block-compare { grid-template-columns: 1fr; } }
-  .card-wide { position: relative; border: 1px solid var(--line); border-radius: 16px; overflow: hidden; background: #000; aspect-ratio: 16/10; }
-  .card-wide img { width: 100%; height: 100%; object-fit: cover; display: block; }
-  .card-wide .tag { position: absolute; top: 14px; left: 14px; background: rgba(0,0,0,0.78); border: 1px solid rgba(255,255,255,0.15); color: var(--ink); font-size: 11px; letter-spacing: 2px; padding: 6px 11px; border-radius: 999px; text-transform: uppercase; }
-  .card-wide.before .tag { color: #ff8a8a; }
-  .card-wide.after .tag { color: var(--accent); }
-  .card-wide .caption { position: absolute; bottom: 0; left: 0; right: 0; padding: 22px 22px 18px; background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0)); }
-  .card-wide .caption h3 { margin: 0 0 4px; font-size: 17px; font-weight: 600; }
-  .card-wide .caption p { margin: 0; font-size: 13px; color: var(--ink-dim); line-height: 1.45; }
+  /* WIDE BAND — image above, body panel below */
+  .band { margin: 30px 0; border-radius: 20px; overflow: hidden; border: 1px solid var(--line); background: var(--bg-2); }
+  .band .pic { aspect-ratio: 16/9; overflow: hidden; background: #000; position: relative; }
+  .band .pic img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .band .body { padding: 26px 32px 28px; }
+  .band .body .eyebrow { margin-bottom: 8px; }
+  .band .body h3 { font-family: 'Fraunces', serif; font-weight: 700; font-size: clamp(22px, 3vw, 32px); margin: 0 0 8px; letter-spacing: -0.01em; line-height: 1.15; }
+  .band .body p { margin: 0; color: var(--ink-dim); font-size: clamp(14px, 1.6vw, 16px); max-width: 720px; line-height: 1.55; }
+  @media (max-width: 720px) { .band .body { padding: 22px 22px 22px; } }
 
   /* SECTION */
   section.block { padding: 80px 0; border-top: 1px solid var(--line); }
@@ -168,18 +161,49 @@
 <header id="top" class="wrap hero">
   <div class="eyebrow">Proposal · 30-12 Astoria Blvd</div>
   <h1 class="display">A great location stuck with the wrong operators. <em>Let's fix that.</em></h1>
+  <p class="kicker">Same block. Same neighbors. Different middle door — in 30 days.</p>
+</header>
+
+<section class="wrap" id="block" style="padding-bottom: 8px;">
+  <div class="split-pair">
+    <div class="split-card before">
+      <div class="pic">
+        <span class="tag">Today</span>
+        <img src="before_block.png" alt="Current state of 3012 Astoria Blvd — Starbucks, blank dispensary storefront, Wine & Spirits">
+      </div>
+      <div class="body">
+        <h3>Starbucks. Blank door. Wine &amp; Spirits.</h3>
+        <p>The dispensary sits between two of the highest-traffic shops on the corner — with no exterior signage at all. From the sidewalk, the middle door reads as vacant.</p>
+      </div>
+    </div>
+    <div class="split-card after">
+      <div class="pic">
+        <span class="tag">In 30 days</span>
+        <img src="after_block_night.png" alt="HighLine Astoria at night — illuminated signage, queue at the door, Starbucks and Wine & Spirits flanking">
+      </div>
+      <div class="body">
+        <h3>Same neighbors. Lit-up middle door.</h3>
+        <p>Illuminated awning, a queue out the door at night, and a corner that finally works as a single retail destination instead of one closed-looking storefront in the middle of two.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap narrative">
   <p class="lede">The dispensary on Astoria Blvd has been mismanaged into about $100K of arrears, with no signage, no marketing, and a guarantor on his way out. The location itself? One of the best in Queens. Here's a direct proposal — what we're taking over, how we're paying you back, and what the place is going to look like in 30 days.</p>
   <div class="hero-meta">
-    <span><b>License Holders:</b> Daniel Boland & Kevin Dunn</span>
+    <span><b>License Holders:</b> Daniel Boland &amp; Kevin Dunn</span>
     <span><b>For:</b> Landlord, 30-12 Astoria Blvd</span>
     <span><b>Status:</b> New management, day one</span>
   </div>
-</header>
+</section>
 
-<section class="wrap" style="padding-top:20px;">
+<section class="wrap">
   <div class="band">
-    <img src="after_storefront.png" alt="HighLine Astoria storefront — Q18 bus, customer leaving with a branded shopping bag">
-    <div class="band-caption">
+    <div class="pic">
+      <img src="after_storefront.png" alt="HighLine Astoria storefront — Q18 bus, customer leaving with a branded shopping bag">
+    </div>
+    <div class="body">
       <div class="eyebrow">3012 Astoria Blvd · Q18 bus stop</div>
       <h3>The Q18 stops in front of the door. People should be walking out with bags.</h3>
       <p>Every weekday, thousands of commuters wait three feet from this storefront. Today they don't even know it's a dispensary. After 30 days, they won't be able to miss it.</p>
@@ -187,50 +211,28 @@
   </div>
 </section>
 
-<section class="block" id="block">
-  <div class="wrap">
-    <div class="eyebrow">The block</div>
-    <h2 class="display">Look at the neighbors. Now look at the middle door.</h2>
-    <p class="intro">Starbucks pulls a queue every morning. Wine &amp; Spirits has a steady customer base every weekend. The N/W subway runs overhead. The Q18 stops at the curb. And in the middle of all of it sits a licensed dispensary that nobody walking by can tell is open. The block is already working — the middle storefront just needs to start showing up.</p>
-    <div class="block-compare">
-      <div class="card-wide before">
-        <span class="tag">Today</span>
-        <img src="before_block.png" alt="Current state of 3012 Astoria Blvd — Starbucks, blank dispensary storefront, Wine & Spirits">
-        <div class="caption">
-          <h3>Starbucks. Blank door. Wine &amp; Spirits.</h3>
-          <p>The dispensary in the middle has no exterior signage at all. To anyone on the sidewalk, it reads as vacant — between two of the highest-traffic shops on the corner.</p>
-        </div>
-      </div>
-      <div class="card-wide after">
-        <span class="tag">In 30 days</span>
-        <img src="after_block_night.png" alt="HighLine Astoria at night — illuminated signage, queue at the door, Starbucks and Wine & Spirits flanking">
-        <div class="caption">
-          <h3>Same neighbors. Lit-up middle door.</h3>
-          <p>Illuminated black-and-white awning, a queue out the door at night, and a corner that finally works as a single retail destination.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="wrap compare" id="vision">
+<section class="wrap" id="vision" style="padding: 60px 0 30px;">
   <div class="compare-head">
-    <div class="eyebrow">Inside today vs. 30 days from now</div>
+    <div class="eyebrow">Inside, today vs. 30 days from now</div>
     <h2 class="display">Same four walls. Different business.</h2>
   </div>
-  <div class="compare-grid">
-    <div class="card-img before">
-      <span class="tag">Today</span>
-      <img src="before.jpg" alt="Current state of dispensary — sparse shelves, taped notice, no signage">
-      <div class="caption">
+  <div class="split-pair">
+    <div class="split-card tall before">
+      <div class="pic">
+        <span class="tag">Today</span>
+        <img src="before.jpg" alt="Current state of dispensary — sparse shelves, taped notice, no signage">
+      </div>
+      <div class="body">
         <h3>Empty shelves. Taped-up notices. Cash only.</h3>
         <p>$37,500 in January with literally zero advertising, no exterior sign, no card processing. The fact that anyone walks in is a testament to the location.</p>
       </div>
     </div>
-    <div class="card-img after">
-      <span class="tag">In 30 days</span>
-      <img src="after_interior.png" alt="Vision of redesigned dispensary — full shelves, exposed brick, illuminated branding">
-      <div class="caption">
+    <div class="split-card tall after">
+      <div class="pic">
+        <span class="tag">In 30 days</span>
+        <img src="after_interior.png" alt="Vision of redesigned dispensary — full shelves, exposed brick, illuminated branding">
+      </div>
+      <div class="body">
         <h3>HighLine Astoria. A neighborhood spot.</h3>
         <p>Illuminated exterior signage, fully stocked walls, fast-pickup lane for commuters off the bus and the N/W. Built to capture the foot traffic that already walks past every day.</p>
       </div>
