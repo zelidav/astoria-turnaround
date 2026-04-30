@@ -160,6 +160,30 @@
 
   footer { padding: 40px 0 60px; text-align: center; color: var(--ink-dim); font-size: 12px; border-top: 1px solid var(--line); margin-top: 60px; }
   footer p { margin: 4px 0; }
+
+  /* MODAL — email gate before PDF download */
+  .modal[hidden] { display: none; }
+  .modal { position: fixed; inset: 0; z-index: 100; display: flex; align-items: center; justify-content: center; padding: 20px; }
+  .modal-backdrop { position: absolute; inset: 0; background: rgba(0,0,0,0.78); backdrop-filter: blur(8px); cursor: pointer; }
+  .modal-card { position: relative; background: var(--bg-2); border: 1px solid var(--line); border-radius: 22px; padding: 38px 34px 30px; max-width: 480px; width: 100%; animation: modalIn .28s cubic-bezier(.2,.7,.3,1); box-shadow: 0 30px 80px rgba(0,0,0,0.5); }
+  @keyframes modalIn { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+  .modal-close { position: absolute; top: 12px; right: 14px; background: transparent; border: 0; color: var(--ink-dim); font-size: 26px; cursor: pointer; line-height: 1; padding: 6px 10px; border-radius: 8px; }
+  .modal-close:hover { color: var(--ink); background: var(--line); }
+  .modal-card .eyebrow { margin-bottom: 10px; }
+  .modal-card h3 { font-family: 'Fraunces', serif; font-weight: 700; font-size: 26px; margin: 0 0 14px; letter-spacing: -0.01em; line-height: 1.15; }
+  .modal-card p.modal-body { color: var(--ink-dim); font-size: 14px; line-height: 1.6; margin: 0 0 22px; }
+  .modal-card label { display: block; font-size: 12px; color: var(--ink-dim); margin-bottom: 8px; letter-spacing: 0.3px; }
+  .modal-card input[type="email"] { width: 100%; background: var(--bg); border: 1px solid var(--line); color: var(--ink); padding: 14px 16px; border-radius: 10px; font-size: 15px; font-family: inherit; outline: none; transition: border-color .15s; box-sizing: border-box; }
+  .modal-card input[type="email"]:focus { border-color: var(--accent); }
+  .modal-card button.modal-submit { width: 100%; margin-top: 12px; background: var(--accent); color: #0a0b0d; border: 0; padding: 14px; border-radius: 999px; font-weight: 600; font-size: 15px; cursor: pointer; font-family: inherit; transition: transform .15s, box-shadow .15s; }
+  .modal-card button.modal-submit:hover { transform: translateY(-1px); box-shadow: 0 10px 30px rgba(216,255,62,0.22); }
+  .modal-card button.modal-submit:disabled { opacity: 0.55; cursor: wait; transform: none; }
+  .modal-fineprint { font-size: 11px; color: var(--ink-dim); margin: 12px 0 0; opacity: 0.65; line-height: 1.5; }
+  .modal-includes { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; margin: 0 0 22px; }
+  .modal-includes-title { font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--accent); margin-bottom: 8px; font-weight: 500; }
+  .modal-includes ul { list-style: none; padding: 0; margin: 0; font-size: 13px; color: var(--ink); }
+  .modal-includes li { padding: 3px 0; display: flex; gap: 8px; align-items: flex-start; }
+  .modal-includes li::before { content: '·'; color: var(--accent); font-weight: 700; flex-shrink: 0; }
 </style>
 </head>
 <body>
@@ -175,7 +199,7 @@
       <a href="#math">Math</a>
       <a href="#ask">The Ask</a>
     </div>
-    <a class="nav-cta" href="Landlord_Proposal.pdf" download>Download PDF</a>
+    <a class="nav-cta" href="Landlord_Proposal.pdf" data-pdf>Get the PDF</a>
   </div>
 </nav>
 
@@ -193,8 +217,8 @@
         <img src="before_block.png" alt="Current state of 3012 Astoria Blvd — blank dispensary storefront flanked by Wine & Spirits and a coffee shop">
       </div>
       <div class="body">
-        <h3>Coffee on one side. Wine &amp; Spirits on the other. Blank door in the middle.</h3>
-        <p>The dispensary sits between two of the highest-traffic shops on the corner — with no exterior signage at all. From the sidewalk, the middle door reads as vacant.</p>
+        <h3>Two glowing storefronts. One dark middle door.</h3>
+        <p>The block is alive on either side. In the middle sits a licensed dispensary that reads as closed — no awning, no glow, no reason for anyone walking past to slow down. It feels like the block forgot it was there.</p>
       </div>
     </div>
     <div class="split-card after">
@@ -203,8 +227,8 @@
         <img src="after_block_night.png" alt="HighLine Astoria at night — illuminated signage, queue at the door, JR's burgers and Wine & Spirits flanking, Q18 bus and elevated subway in frame">
       </div>
       <div class="body">
-        <h3>JR's on one side. Wine &amp; Spirits on the other. A queue in the middle.</h3>
-        <p>Illuminated awning, a line out the door at night, the Q18 pulling up to the curb, and a corner that finally works as a single retail destination instead of one closed-looking storefront between two.</p>
+        <h3>Three reasons to stop on the corner.</h3>
+        <p>Illuminated awning. A line at the door. The Q18 pulling in. The block finally working as one destination instead of two with a dead spot between them.</p>
       </div>
     </div>
   </div>
@@ -230,7 +254,7 @@
     <div class="body">
       <div class="eyebrow">3012 Astoria Blvd · Q18 bus stop</div>
       <h3>Bag in hand. Bus pulling up. The whole point of this corner.</h3>
-      <p>Every weekday, thousands of commuters wait three feet from this storefront. Today they don't even know it's a dispensary. After 30 days, they're walking out with a bag and catching the Q18.</p>
+      <p>Thousands of commuters wait a few feet from this door every weekday. Today they don't even know it's a dispensary. In 30 days, they're walking out with a bag and catching the Q18.</p>
     </div>
   </div>
 </section>
@@ -247,8 +271,8 @@
         <img src="before.jpg" alt="Current state of dispensary — sparse shelves, taped notice, no signage">
       </div>
       <div class="body">
-        <h3>Empty shelves. Taped-up notices. Cash only.</h3>
-        <p>$37,500 in January with literally zero advertising, no exterior sign, no card processing. The fact that anyone walks in is a testament to the location.</p>
+        <h3>Half-empty shelves. A taped-up sign. Lights on, life off.</h3>
+        <p>Cash only. No exterior sign. No marketing. Anyone who finds the place finds it despite the room, not because of it. Quiet shelves, dim corners, the feeling that nobody's home — even when someone's behind the counter.</p>
       </div>
     </div>
     <div class="split-card tall after">
@@ -258,7 +282,7 @@
       </div>
       <div class="body">
         <h3>HighLine Astoria. A neighborhood spot.</h3>
-        <p>Illuminated exterior signage, fully stocked walls, fast-pickup lane for commuters off the bus and the N/W. Built to capture the foot traffic that already walks past every day.</p>
+        <p>Warm light on exposed brick, walls of full shelves, a fast-pickup lane built for commuters coming off the bus and the N/W. A room people walk in for, not just toward.</p>
       </div>
     </div>
   </div>
@@ -284,11 +308,11 @@
         <div class="lab"><b>Residents in the ZIP.</b> Median income $97K. Median age 37. 60% college-educated. 87% renters.</div>
       </div>
       <div class="stat">
-        <div class="num warm">$9K</div>
-        <div class="lab"><b>In 48 hours, cash-only,</b> on the first warm-weather days. With no sign. With no marketing.</div>
+        <div class="num warm">~$9K</div>
+        <div class="lab"><b>Roughly a single weekend, cash-only,</b> on the first warm-weather days. No sign. No marketing.</div>
       </div>
     </div>
-    <p style="margin-top:36px; color:var(--ink-dim); font-size:15px; line-height:1.6;">Comparable Astoria dispensaries that are actually <em>run</em> are doing $80–150K+ per month. We're targeting <b style="color:var(--ink);">$100–150K/month within 6 months of relaunch.</b> At that level, rent is comfortably covered, the arrears get paid down, and you have an anchor tenant for the rest of the lease term.</p>
+    <p style="margin-top:36px; color:var(--ink-dim); font-size:15px; line-height:1.6;">Comparable Astoria dispensaries that are actually <em>run</em> are doing well into six figures a month. We're targeting <b style="color:var(--ink);">around six figures monthly within ~6 months of relaunch</b>, scaling from there. At that level, rent is comfortably covered, the arrears get paid down, and you have an anchor tenant for the rest of the lease term — full projections in the proposal doc.</p>
   </div>
 </section>
 
@@ -418,8 +442,9 @@
       <div class="eyebrow">What we're asking</div>
       <h2 class="display">Four things. That's it.</h2>
       <p>Apply the existing security deposit toward back rent. Forbearance on the remaining balance against a structured repayment plan. Consent to the management transition. No eviction proceedings during stabilization, as long as we're current on rent and arrears payments. In return: a professional operation in your building, immediate rent flow, real capital behind the lease, a replacement guarantor, and a long-term tenant. We think this is the best available outcome for everyone — and we're ready to start tomorrow.</p>
+      <p style="color:var(--ink); font-size:14px; max-width:580px; margin:-10px auto 24px; opacity:0.85;"><b>What's on this page is the highlights.</b> The full PDF goes deeper — month-by-month rollout schedule, complete arrears breakdown, financial projections, and detailed lease restructuring terms.</p>
       <div class="cta-row">
-        <a class="btn btn-primary" href="Landlord_Proposal.pdf" download>↓ Download Full PDF</a>
+        <a class="btn btn-primary pdf-trigger" href="Landlord_Proposal.pdf" data-pdf>↓ Get the full PDF</a>
         <a class="btn btn-ghost" href="#top">Back to top</a>
       </div>
     </div>
@@ -430,6 +455,109 @@
   <p>The Management Group · on behalf of the License Holders of 30-12 Astoria Blvd</p>
   <p>Daniel Boland · Kevin Dunn — equal shareholders, CAURD-licensed entity, social equity qualifying applicants under New York Cannabis Law.</p>
 </footer>
+
+<div class="modal" id="pdfModal" hidden role="dialog" aria-modal="true" aria-labelledby="pdfModalTitle">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-card">
+    <button class="modal-close" data-close aria-label="Close">×</button>
+    <div class="eyebrow">The full proposal</div>
+    <h3 id="pdfModalTitle">There's a lot more in the doc.</h3>
+    <p class="modal-body">What's on this page is the headline argument. The PDF is the full case — every number, every milestone, every commitment, in writing.</p>
+    <div class="modal-includes">
+      <div class="modal-includes-title">Inside the full PDF</div>
+      <ul>
+        <li>Complete arrears breakdown &amp; resolution timeline</li>
+        <li>Month-by-month rollout schedule (Days 1–180)</li>
+        <li>Lease restructuring terms &amp; replacement guaranty</li>
+        <li>Financial structure — capital stack, fees, priority of payments</li>
+        <li>Long-term plan &amp; multi-store framework</li>
+      </ul>
+    </div>
+    <form id="pdfForm" novalidate>
+      <label for="pdfEmail">Email — we'll also send you a copy</label>
+      <input id="pdfEmail" type="email" name="email" placeholder="you@email.com" required autocomplete="email" inputmode="email">
+      <button class="modal-submit" type="submit">Send me the PDF →</button>
+    </form>
+    <p class="modal-fineprint">One email, one copy of the proposal, no list, no follow-ups unless you ask.</p>
+  </div>
+</div>
+
+<script>
+(function(){
+  const STORAGE_KEY = 'pdfEmailGiven_v1';
+  const PDF_URL = 'Landlord_Proposal.pdf';
+  const CAPTURE_ENDPOINT = 'https://formsubmit.co/ajax/zelidav@gmail.com';
+  const modal = document.getElementById('pdfModal');
+  const form = document.getElementById('pdfForm');
+  const input = document.getElementById('pdfEmail');
+  const submit = form.querySelector('.modal-submit');
+
+  function triggerDownload() {
+    const a = document.createElement('a');
+    a.href = PDF_URL;
+    a.download = 'Astoria_Blvd_Turnaround_Proposal.pdf';
+    a.rel = 'noopener';
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(() => a.remove(), 100);
+  }
+
+  function openModal() {
+    modal.hidden = false;
+    document.body.style.overflow = 'hidden';
+    setTimeout(() => input.focus(), 60);
+  }
+  function closeModal() {
+    modal.hidden = true;
+    document.body.style.overflow = '';
+    submit.disabled = false;
+    submit.textContent = 'Send me the PDF →';
+  }
+
+  // Intercept all PDF triggers
+  document.querySelectorAll('a[data-pdf]').forEach(a => {
+    a.addEventListener('click', (e) => {
+      if (localStorage.getItem(STORAGE_KEY)) return; // already gated
+      e.preventDefault();
+      openModal();
+    });
+  });
+
+  modal.querySelectorAll('[data-close]').forEach(el => el.addEventListener('click', closeModal));
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !modal.hidden) closeModal(); });
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const email = (input.value || '').trim();
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      input.style.borderColor = '#ff8a8a';
+      input.focus();
+      return;
+    }
+    submit.disabled = true;
+    submit.textContent = 'Sending…';
+
+    // Fire-and-forget capture; never block download on this
+    try {
+      fetch(CAPTURE_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify({
+          email: email,
+          source: 'queensdabco.com landlord proposal',
+          page_url: location.href,
+          _subject: 'New Astoria Blvd proposal download',
+          _template: 'table'
+        })
+      }).catch(() => {});
+    } catch (_) {}
+
+    localStorage.setItem(STORAGE_KEY, email);
+    triggerDownload();
+    setTimeout(closeModal, 400);
+  });
+})();
+</script>
 
 </body>
 </html>
