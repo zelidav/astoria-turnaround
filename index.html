@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>30-12 Astoria Blvd — Turnaround Proposal</title>
+<meta name="description" content="A direct proposal to the landlord and license holders of 30-12 Astoria Blvd: turn an empty, mismanaged shop into Astoria's flagship dispensary.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0b0d;
+    --bg-2: #111316;
+    --ink: #f4f3ee;
+    --ink-dim: #a7a59c;
+    --line: #1f2227;
+    --accent: #d8ff3e;
+    --warm: #e9b277;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); font-family: 'Inter', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+  .eyebrow { text-transform: uppercase; letter-spacing: 3px; font-size: 12px; color: var(--ink-dim); font-weight: 500; }
+  .display { font-family: 'Fraunces', serif; font-weight: 700; letter-spacing: -0.02em; line-height: 1.02; }
+
+  /* NAV */
+  nav { position: sticky; top: 0; z-index: 50; background: rgba(10,11,13,0.85); backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
+  .nav-inner { display: flex; justify-content: space-between; align-items: center; padding: 14px 24px; max-width: 1100px; margin: 0 auto; }
+  .nav-mark { font-family: 'Fraunces', serif; font-weight: 700; letter-spacing: 0.5px; font-size: 16px; }
+  .nav-mark span { color: var(--accent); }
+  .nav-links { display: flex; gap: 22px; font-size: 13px; }
+  .nav-links a { color: var(--ink-dim); }
+  .nav-links a:hover { color: var(--ink); text-decoration: none; }
+  .nav-cta { background: var(--accent); color: #0a0b0d; padding: 8px 14px; border-radius: 999px; font-weight: 600; font-size: 13px; }
+  .nav-cta:hover { text-decoration: none; transform: translateY(-1px); }
+  @media (max-width: 720px) { .nav-links { display: none; } }
+
+  /* HERO */
+  .hero { padding: 90px 0 40px; }
+  .hero h1 { font-size: clamp(40px, 7vw, 88px); margin: 16px 0 18px; }
+  .hero h1 em { font-style: normal; color: var(--accent); }
+  .hero p.lede { font-size: clamp(17px, 2vw, 21px); color: var(--ink-dim); max-width: 720px; line-height: 1.5; margin: 0 0 36px; }
+  .hero-meta { display: flex; gap: 28px; flex-wrap: wrap; font-size: 13px; color: var(--ink-dim); }
+  .hero-meta b { color: var(--ink); font-weight: 600; }
+
+  /* BEFORE/AFTER */
+  .compare { padding: 50px 0 30px; }
+  .compare-head { text-align: center; margin-bottom: 36px; }
+  .compare-head h2 { font-size: clamp(28px, 4.5vw, 44px); margin: 8px 0; }
+  .compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; align-items: stretch; }
+  @media (max-width: 720px) { .compare-grid { grid-template-columns: 1fr; } }
+  .card-img { position: relative; border: 1px solid var(--line); border-radius: 16px; overflow: hidden; background: #000; aspect-ratio: 4/5; }
+  .card-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .card-img .tag { position: absolute; top: 14px; left: 14px; background: rgba(0,0,0,0.78); border: 1px solid rgba(255,255,255,0.15); color: var(--ink); font-size: 11px; letter-spacing: 2px; padding: 6px 11px; border-radius: 999px; text-transform: uppercase; }
+  .card-img.before .tag { color: #ff8a8a; }
+  .card-img.after .tag { color: var(--accent); }
+  .card-img .caption { position: absolute; bottom: 0; left: 0; right: 0; padding: 18px 18px 16px; background: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0)); }
+  .card-img .caption h3 { margin: 0 0 4px; font-size: 18px; font-weight: 600; }
+  .card-img .caption p { margin: 0; font-size: 13px; color: var(--ink-dim); line-height: 1.4; }
+  .arrow-row { display: flex; justify-content: center; padding: 14px 0 0; color: var(--accent); font-size: 14px; letter-spacing: 4px; text-transform: uppercase; }
+
+  /* SECTION */
+  section.block { padding: 80px 0; border-top: 1px solid var(--line); }
+  section.block h2 { font-size: clamp(28px, 4.5vw, 44px); margin: 6px 0 14px; }
+  section.block p.intro { color: var(--ink-dim); max-width: 720px; font-size: 17px; line-height: 1.6; margin: 0 0 36px; }
+
+  /* STATS */
+  .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+  @media (max-width: 900px) { .stats-grid { grid-template-columns: repeat(2, 1fr); } }
+  .stat { background: var(--bg-2); border: 1px solid var(--line); border-radius: 14px; padding: 22px 20px; }
+  .stat .num { font-family: 'Fraunces', serif; font-weight: 700; font-size: clamp(28px, 4vw, 38px); color: var(--accent); line-height: 1; letter-spacing: -0.02em; }
+  .stat .num.warm { color: var(--warm); }
+  .stat .lab { font-size: 13px; color: var(--ink-dim); margin-top: 10px; line-height: 1.4; }
+  .stat .lab b { color: var(--ink); font-weight: 600; }
+
+  /* PHASES */
+  .phases { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  @media (max-width: 900px) { .phases { grid-template-columns: 1fr; } }
+  .phase { background: var(--bg-2); border: 1px solid var(--line); border-radius: 16px; padding: 26px 24px; position: relative; overflow: hidden; }
+  .phase .num { font-family: 'Fraunces', serif; font-size: 90px; line-height: 1; color: var(--line); position: absolute; top: 6px; right: 14px; pointer-events: none; }
+  .phase h3 { margin: 0 0 4px; font-size: 18px; font-weight: 600; }
+  .phase .when { font-size: 12px; color: var(--accent); letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 14px; font-weight: 500; }
+  .phase ul { padding-left: 18px; margin: 0; color: var(--ink-dim); font-size: 14px; line-height: 1.55; }
+  .phase ul li { margin-bottom: 6px; }
+  .phase ul li b { color: var(--ink); font-weight: 600; }
+
+  /* MATH TABLE */
+  .math { background: var(--bg-2); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; }
+  .math table { width: 100%; border-collapse: collapse; }
+  .math th, .math td { padding: 16px 20px; text-align: left; border-bottom: 1px solid var(--line); font-size: 14px; }
+  .math th { background: #14171b; font-size: 12px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--ink-dim); font-weight: 500; }
+  .math tr:last-child td { border-bottom: 0; }
+  .math tr.total td { font-weight: 600; color: var(--ink); background: #14171b; }
+  .math td.amount { font-family: 'Fraunces', serif; font-weight: 700; color: var(--warm); white-space: nowrap; }
+  @media (max-width: 600px) { .math th, .math td { padding: 12px 14px; font-size: 13px; } }
+
+  /* COMMITMENTS */
+  .commit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  @media (max-width: 720px) { .commit-grid { grid-template-columns: 1fr; } }
+  .commit { background: var(--bg-2); border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px; display: flex; gap: 16px; align-items: flex-start; }
+  .commit .check { color: var(--accent); font-weight: 700; flex-shrink: 0; }
+  .commit b { display: block; margin-bottom: 2px; font-weight: 600; }
+  .commit span { color: var(--ink-dim); font-size: 13px; line-height: 1.5; }
+
+  /* MONEY */
+  .money { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  @media (max-width: 720px) { .money { grid-template-columns: 1fr; } }
+  .money-card { background: var(--bg-2); border: 1px solid var(--line); border-radius: 14px; padding: 22px 24px; }
+  .money-card h4 { font-family: 'Fraunces', serif; font-size: 22px; font-weight: 700; margin: 0 0 8px; color: var(--accent); }
+  .money-card p { color: var(--ink-dim); font-size: 14px; margin: 0; line-height: 1.55; }
+
+  /* CTA */
+  .cta { background: linear-gradient(135deg, #1a1d22 0%, #0a0b0d 100%); border-radius: 24px; padding: 60px 40px; text-align: center; border: 1px solid var(--line); }
+  .cta h2 { font-size: clamp(28px, 4.5vw, 44px); margin: 0 0 12px; }
+  .cta p { color: var(--ink-dim); max-width: 580px; margin: 0 auto 30px; font-size: 16px; line-height: 1.6; }
+  .cta-row { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+  .btn { display: inline-flex; align-items: center; gap: 8px; padding: 14px 26px; border-radius: 999px; font-weight: 600; font-size: 15px; }
+  .btn-primary { background: var(--accent); color: #0a0b0d; }
+  .btn-primary:hover { text-decoration: none; transform: translateY(-2px); box-shadow: 0 10px 30px rgba(216,255,62,0.2); }
+  .btn-ghost { background: transparent; color: var(--ink); border: 1px solid var(--line); }
+  .btn-ghost:hover { text-decoration: none; border-color: var(--ink-dim); }
+
+  footer { padding: 40px 0 60px; text-align: center; color: var(--ink-dim); font-size: 12px; border-top: 1px solid var(--line); margin-top: 60px; }
+  footer p { margin: 4px 0; }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="#top" class="nav-mark">30-12 <span>Astoria</span></a>
+    <div class="nav-links">
+      <a href="#vision">Vision</a>
+      <a href="#numbers">Numbers</a>
+      <a href="#plan">Plan</a>
+      <a href="#math">Math</a>
+      <a href="#ask">The Ask</a>
+    </div>
+    <a class="nav-cta" href="Landlord_Proposal.pdf" download>Download PDF</a>
+  </div>
+</nav>
+
+<header id="top" class="wrap hero">
+  <div class="eyebrow">Proposal · 30-12 Astoria Blvd</div>
+  <h1 class="display">A great location stuck with the wrong operators. <em>Let's fix that.</em></h1>
+  <p class="lede">The dispensary on Astoria Blvd has been mismanaged into about $100K of arrears, with no signage, no marketing, and a guarantor on his way out. The location itself? One of the best in Queens. Here's a direct proposal — what we're taking over, how we're paying you back, and what the place is going to look like in 30 days.</p>
+  <div class="hero-meta">
+    <span><b>License Holders:</b> Daniel Boland & Kevin Dunn</span>
+    <span><b>For:</b> Landlord, 30-12 Astoria Blvd</span>
+    <span><b>Status:</b> New management, day one</span>
+  </div>
+</header>
+
+<section class="wrap compare" id="vision">
+  <div class="compare-head">
+    <div class="eyebrow">Today vs. 30 days from now</div>
+    <h2 class="display">Same four walls. Different business.</h2>
+  </div>
+  <div class="compare-grid">
+    <div class="card-img before">
+      <span class="tag">Today</span>
+      <img src="before.jpg" alt="Current state of dispensary — sparse shelves, taped notice, no signage">
+      <div class="caption">
+        <h3>Empty shelves. Taped-up notices. Cash only.</h3>
+        <p>$37,500 in January with literally zero advertising, no exterior sign, no card processing. The fact that anyone walks in is a testament to the location.</p>
+      </div>
+    </div>
+    <div class="card-img after">
+      <span class="tag">In 30 days</span>
+      <img src="after.png" alt="Vision of redesigned dispensary — full shelves, exposed brick, illuminated branding">
+      <div class="caption">
+        <h3>HighLine Astoria. A neighborhood spot.</h3>
+        <p>Illuminated exterior signage, fully stocked walls, fast-pickup lane for commuters off the bus and the N/W. Built to capture the foot traffic that already walks past every day.</p>
+      </div>
+    </div>
+  </div>
+  <div class="arrow-row">↓ How we get there ↓</div>
+</section>
+
+<section class="block" id="numbers">
+  <div class="wrap">
+    <div class="eyebrow">Why this corner</div>
+    <h2 class="display">The location is doing the heavy lifting already.</h2>
+    <p class="intro">This isn't a hopeful pitch about future demand. The customers are already at the door — five MTA bus routes stop in front, the N/W subway is one block away, and 37,000 people in the immediate ZIP code over-index on every metric that matters for cannabis retail.</p>
+    <div class="stats-grid">
+      <div class="stat">
+        <div class="num">3–5K</div>
+        <div class="lab"><b>People at the bus stop daily.</b> Q19, M60-SBS, Q100, Q101, Q18 — the M60 runs to LaGuardia 24/7.</div>
+      </div>
+      <div class="stat">
+        <div class="num">10–14K</div>
+        <div class="lab"><b>Subway riders</b> through the N/W station one block away, every single day.</div>
+      </div>
+      <div class="stat">
+        <div class="num">37K+</div>
+        <div class="lab"><b>Residents in the ZIP.</b> Median income $97K. Median age 37. 60% college-educated. 87% renters.</div>
+      </div>
+      <div class="stat">
+        <div class="num warm">$9K</div>
+        <div class="lab"><b>In 48 hours, cash-only,</b> on the first warm-weather days. With no sign. With no marketing.</div>
+      </div>
+    </div>
+    <p style="margin-top:36px; color:var(--ink-dim); font-size:15px; line-height:1.6;">Comparable Astoria dispensaries that are actually <em>run</em> are doing $80–150K+ per month. We're targeting <b style="color:var(--ink);">$100–150K/month within 6 months of relaunch.</b> At that level, rent is comfortably covered, the arrears get paid down, and you have an anchor tenant for the rest of the lease term.</p>
+  </div>
+</section>
+
+<section class="block" id="plan">
+  <div class="wrap">
+    <div class="eyebrow">The turnaround</div>
+    <h2 class="display">Three phases. No hand-waving.</h2>
+    <p class="intro">From the day we take operational control, here's the order of operations. Phase 1 is happening immediately. Phase 2 starts the moment revenue stabilizes. Phase 3 cleans up the legal structure once the business is back on its feet.</p>
+    <div class="phases">
+      <div class="phase">
+        <div class="num">01</div>
+        <div class="when">Days 1–30</div>
+        <h3>The facelift.</h3>
+        <ul>
+          <li><b>Outdoor signage installed.</b> Illuminated exterior, A-frame, window graphics. The store needs to look open — right now nobody walking by can tell.</li>
+          <li><b>Local advertising launched.</b> Flyers and cards in every bodega, coffee shop, and laundromat within a block. Bus shelter QR. Social presence.</li>
+          <li><b>Fresh inventory.</b> Existing brand and distributor relationships bring product on consignment and net terms — a full selection inside the first week.</li>
+          <li><b>New staff, new systems.</b> Real POS, proper cash handling, extended hours for the morning and evening commuter waves.</li>
+          <li><b>Card processing on day one.</b> Currently cash-only. Cashless typically lifts per-ticket revenue 20–30%.</li>
+        </ul>
+      </div>
+      <div class="phase">
+        <div class="num">02</div>
+        <div class="when">Months 1–3</div>
+        <h3>Back rent recovery.</h3>
+        <ul>
+          <li><b>Existing security deposit (~$48K)</b> applied to back rent immediately. That alone reduces the outstanding balance to ~$50–65K.</li>
+          <li><b>Good-faith monthly payments</b> against the remaining balance begin no later than Month 2 — on top of current rent, scaling up as revenue stabilizes.</li>
+          <li><b>Target: full resolution within 6–9 months</b> from the date we assume operations.</li>
+          <li><b>Eviction is the worse outcome.</b> It takes months, leaves the space vacant, and you still don't collect the back rent. This plan gets you current faster than any alternative.</li>
+        </ul>
+      </div>
+      <div class="phase">
+        <div class="num">03</div>
+        <div class="when">Months 3–6</div>
+        <h3>Lease restructuring.</h3>
+        <ul>
+          <li><b>New tenant entity.</b> Lease assigned to a clean, well-capitalized holding company controlled by management — no legacy baggage from the prior operators.</li>
+          <li><b>Sublease to the licensed dispensary.</b> If anything ever happens at the dispensary level (regulatory, license, anything), the lease stays intact.</li>
+          <li><b>New Good Guy Guaranty.</b> Limited-term (12–16 months) personal guaranty from management principals, replacing Tim Derham's.</li>
+          <li><b>Same economics.</b> Same rent, same escalation, same term. We're not renegotiating the deal — we're just putting a clean tenant on the other side of it.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="math">
+  <div class="wrap">
+    <div class="eyebrow">Where the $100K goes</div>
+    <h2 class="display">The math, on one page.</h2>
+    <p class="intro">No surprises, no hidden line items. Here's the arrears as we understand them and how each piece gets resolved.</p>
+    <div class="math">
+      <table>
+        <thead>
+          <tr><th>Obligation</th><th>Estimated</th><th>Resolution</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Back rent</td>
+            <td class="amount">$48–64K</td>
+            <td>Security deposit application + monthly payments</td>
+          </tr>
+          <tr>
+            <td>Unpaid utilities</td>
+            <td class="amount">$10–15K</td>
+            <td>Direct payment from operations</td>
+          </tr>
+          <tr>
+            <td>Property tax arrears <span style="color:var(--ink-dim);">(if any)</span></td>
+            <td class="amount">TBD</td>
+            <td>Included in payment plan</td>
+          </tr>
+          <tr class="total">
+            <td>Total estimated arrears</td>
+            <td class="amount">~$100K</td>
+            <td>Targeted resolution: 6–9 months</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 style="margin-top:50px; font-family:'Fraunces',serif; font-size:24px; font-weight:700;">How our money works.</h3>
+    <p style="color:var(--ink-dim); margin: 0 0 24px; max-width:720px; font-size:15px; line-height:1.6;">Full transparency on how the business is structured financially — and where you sit in the priority stack.</p>
+    <div class="money">
+      <div class="money-card">
+        <h4>Rent first. Always.</h4>
+        <p>Rent is the first check written every month — before payroll, inventory, our loan repayment, or our management fee. Your interests are ahead of ours, full stop.</p>
+      </div>
+      <div class="money-card">
+        <h4>Capital is a loan, not a gift.</h4>
+        <p>What we put in for signage, inventory, marketing, and stabilization is documented as a senior secured loan to the business. We get paid back from revenue — after operating expenses are covered.</p>
+      </div>
+      <div class="money-card">
+        <h4>10% management fee.</h4>
+        <p>A 10% management services fee on gross revenue covers staffing, compliance, financial controls, vendor management, and operational support. Standard, transparent, and after rent.</p>
+      </div>
+      <div class="money-card">
+        <h4>Arrears come from cash flow.</h4>
+        <p>Back rent is paid from available cash flow once operations stabilize — not as a gift from us, but from a business that's actually generating revenue. That's why this works long term.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <div class="eyebrow">What we're committing to</div>
+    <h2 class="display">Locked-in milestones.</h2>
+    <p class="intro">Everything we've said above, mapped to dates. If we miss these, you have every right to come after us.</p>
+    <div class="commit-grid">
+      <div class="commit"><span class="check">✓</span><div><b>Current rent paid monthly, on time</b><span>Immediately upon taking control.</span></div></div>
+      <div class="commit"><span class="check">✓</span><div><b>Signage, facelift, and relaunch</b><span>Within 30 days.</span></div></div>
+      <div class="commit"><span class="check">✓</span><div><b>Good-faith payments against arrears begin</b><span>Month 2.</span></div></div>
+      <div class="commit"><span class="check">✓</span><div><b>Lease restructured to new clean entity</b><span>Months 3–6.</span></div></div>
+      <div class="commit"><span class="check">✓</span><div><b>Replacement guarantor in place</b><span>Replaces Tim Derham upon lease restructuring.</span></div></div>
+      <div class="commit"><span class="check">✓</span><div><b>Security deposit replenished</b><span>Within 12 months of restructured lease.</span></div></div>
+      <div class="commit"><span class="check">✓</span><div><b>All arrears fully resolved</b><span>Target: 6–9 months from start.</span></div></div>
+      <div class="commit"><span class="check">✓</span><div><b>Long-term anchor tenant</b><span>Astoria as the flagship of a multi-store NY operation.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="ask">
+  <div class="wrap">
+    <div class="cta">
+      <div class="eyebrow">What we're asking</div>
+      <h2 class="display">Four things. That's it.</h2>
+      <p>Apply the existing security deposit toward back rent. Forbearance on the remaining balance against a structured repayment plan. Consent to the management transition. No eviction proceedings during stabilization, as long as we're current on rent and arrears payments. In return: a professional operation in your building, immediate rent flow, real capital behind the lease, a replacement guarantor, and a long-term tenant. We think this is the best available outcome for everyone — and we're ready to start tomorrow.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="Landlord_Proposal.pdf" download>↓ Download Full PDF</a>
+        <a class="btn btn-ghost" href="#top">Back to top</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>The Management Group · on behalf of the License Holders of 30-12 Astoria Blvd</p>
+  <p>Daniel Boland · Kevin Dunn — equal shareholders, CAURD-licensed entity, social equity qualifying applicants under New York Cannabis Law.</p>
+</footer>
+
+</body>
+</html>
