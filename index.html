@@ -66,15 +66,36 @@
   .compare-head h2 { font-size: clamp(28px, 4.5vw, 44px); margin: 8px 0; }
   .arrow-row { display: flex; justify-content: center; padding: 28px 0 0; color: var(--accent); font-size: 13px; letter-spacing: 4px; text-transform: uppercase; }
 
-  /* WIDE BAND — image above, body panel below */
+  /* WIDE BAND — image/video above, body panel below */
   .band { margin: 30px 0; border-radius: 20px; overflow: hidden; border: 1px solid var(--line); background: var(--bg-2); }
   .band .pic { aspect-ratio: 16/9; overflow: hidden; background: #000; position: relative; }
-  .band .pic img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .band .pic img,
+  .band .pic video { width: 100%; height: 100%; object-fit: cover; display: block; will-change: transform; }
+  .band .pic .videotag { position: absolute; top: 14px; right: 14px; background: rgba(0,0,0,0.7); border: 1px solid rgba(255,255,255,0.18); color: var(--accent); font-size: 10px; letter-spacing: 2px; padding: 5px 10px; border-radius: 999px; text-transform: uppercase; font-weight: 500; backdrop-filter: blur(6px); display: flex; align-items: center; gap: 6px; }
+  .band .pic .videotag::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); animation: pulse 2s infinite; }
+  @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
   .band .body { padding: 26px 32px 28px; }
   .band .body .eyebrow { margin-bottom: 8px; }
   .band .body h3 { font-family: 'Fraunces', serif; font-weight: 700; font-size: clamp(22px, 3vw, 32px); margin: 0 0 8px; letter-spacing: -0.01em; line-height: 1.15; }
   .band .body p { margin: 0; color: var(--ink-dim); font-size: clamp(14px, 1.6vw, 16px); max-width: 720px; line-height: 1.55; }
   @media (max-width: 720px) { .band .body { padding: 22px 22px 22px; } }
+
+  /* Scroll-driven parallax (Chromium/Edge); graceful fallback to static elsewhere */
+  @supports (animation-timeline: view()) {
+    .band .pic video {
+      transform: translateY(0) scale(1.15);
+      animation: bandParallax linear both;
+      animation-timeline: view();
+      animation-range: cover;
+    }
+    @keyframes bandParallax {
+      from { transform: translateY(-10%) scale(1.15); }
+      to   { transform: translateY(10%)  scale(1.15); }
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .band .pic video { animation: none !important; transform: none !important; }
+  }
 
   /* SECTION */
   section.block { padding: 80px 0; border-top: 1px solid var(--line); }
@@ -169,21 +190,21 @@
     <div class="split-card before">
       <div class="pic">
         <span class="tag">Today</span>
-        <img src="before_block.png" alt="Current state of 3012 Astoria Blvd — Starbucks, blank dispensary storefront, Wine & Spirits">
+        <img src="before_block.png" alt="Current state of 3012 Astoria Blvd — blank dispensary storefront flanked by Wine & Spirits and a coffee shop">
       </div>
       <div class="body">
-        <h3>Starbucks. Blank door. Wine &amp; Spirits.</h3>
+        <h3>Coffee on one side. Wine &amp; Spirits on the other. Blank door in the middle.</h3>
         <p>The dispensary sits between two of the highest-traffic shops on the corner — with no exterior signage at all. From the sidewalk, the middle door reads as vacant.</p>
       </div>
     </div>
     <div class="split-card after">
       <div class="pic">
         <span class="tag">In 30 days</span>
-        <img src="after_block_night.png" alt="HighLine Astoria at night — illuminated signage, queue at the door, Starbucks and Wine & Spirits flanking">
+        <img src="after_block_night.png" alt="HighLine Astoria at night — illuminated signage, queue at the door, JR's burgers and Wine & Spirits flanking, Q18 bus and elevated subway in frame">
       </div>
       <div class="body">
-        <h3>Same neighbors. Lit-up middle door.</h3>
-        <p>Illuminated awning, a queue out the door at night, and a corner that finally works as a single retail destination instead of one closed-looking storefront in the middle of two.</p>
+        <h3>JR's on one side. Wine &amp; Spirits on the other. A queue in the middle.</h3>
+        <p>Illuminated awning, a line out the door at night, the Q18 pulling up to the curb, and a corner that finally works as a single retail destination instead of one closed-looking storefront between two.</p>
       </div>
     </div>
   </div>
@@ -201,12 +222,15 @@
 <section class="wrap">
   <div class="band">
     <div class="pic">
-      <img src="after_storefront.png" alt="HighLine Astoria storefront — Q18 bus, customer leaving with a branded shopping bag">
+      <video autoplay muted loop playsinline preload="metadata" poster="after_storefront.png" aria-label="HighLine Astoria storefront — customer grabs his bag and runs for the Q18 bus">
+        <source src="storefront.mp4" type="video/mp4">
+      </video>
+      <span class="videotag">Live</span>
     </div>
     <div class="body">
       <div class="eyebrow">3012 Astoria Blvd · Q18 bus stop</div>
-      <h3>The Q18 stops in front of the door. People should be walking out with bags.</h3>
-      <p>Every weekday, thousands of commuters wait three feet from this storefront. Today they don't even know it's a dispensary. After 30 days, they won't be able to miss it.</p>
+      <h3>Bag in hand. Bus pulling up. The whole point of this corner.</h3>
+      <p>Every weekday, thousands of commuters wait three feet from this storefront. Today they don't even know it's a dispensary. After 30 days, they're walking out with a bag and catching the Q18.</p>
     </div>
   </div>
 </section>
