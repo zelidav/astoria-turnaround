@@ -61,6 +61,7 @@ A coordinated single-day handoff. All of the following happen together as condit
 
 - **The forward-starting lease commences.** The new holding company (signatory at Day 0) becomes the tenant of record. The existing lease arrangement with the prior tenant entity terminates. No legacy baggage.
 - **Tim Derham's personal guaranty terminates.** He walks away clean — no longer carrying long-tail liability on the remaining lease term. *(For Tim, this is the incentive. For the landlord, his guaranty is replaced by a fresh, capitalized one.)*
+- **A full mutual release and hold-harmless is executed** among all parties — landlord, NewCo and its principals, the license holders, the existing operating entity, and Tim Derham. All parties release each other from any past claims related to the property, the lease, and the business; and from any future claims on the business, the revenue, or any interest in the operating entity going forward. Lock-solid, all parties, both directions. Tim walks with no future claim on the business or its revenue; the business walks with no claim against Tim. The landlord is held harmless by all parties on anything pre-flip. No one comes back later.
 - **New personal Good Guy Guaranty** from management principals takes effect. Limited-term, 12–16 months, terminating once the tenant is current on all obligations.
 - **The existing security deposit reverts to the landlord**, applied directly against the back rent, utilities, and property tax arrears at the property.
 - **A fresh security deposit is posted** by the new tenant entity, restoring the landlord's protection on the lease going forward.
@@ -120,6 +121,7 @@ Strategic, not wholesale. The location does not need a wholesale rebuild — it 
 |  Phase 2 plan submitted (storage build-out + throughput)     |  Within 45 days                          |
 |  **Phase 2 plan fully agreed with the landlord**             |  By Day 90                               |
 |  **The flip** — forward-starting lease commences; new guaranty, fresh deposit, payment plan |  Day 90 |
+|  **Full mutual release and hold-harmless** — all parties, past and future claims |  At the flip          |
 |  Existing deposit reverts to landlord (against arrears)      |  At the flip                             |
 |  Monthly arrears payments begin                              |  Month 1 post-flip                       |
 |  Phase 2 capital deployed — storage + throughput             |  Months 1–6 post-flip                    |
@@ -145,7 +147,7 @@ Strategic, not wholesale. The location does not need a wholesale rebuild — it 
 - **No eviction proceedings** during the pre-flip window or the post-flip stabilization period, provided current rent and arrears payments continue per schedule.
 - **A defined, narrow out clause** — license-disrupting events only. In that scenario the deal terminates and both parties revert to status quo.
 
-In return, the landlord receives: full transparency on the principals (tax returns and personal financial information on file **before signing**); at Day 90, a clean, capitalized tenant of record, a replacement guarantor, a fresh security deposit, and the existing deposit applied directly to the arrears at the property; a written, eroding monthly payment plan against the remaining ~$100K; and a path to making the property fully current within 6–9 months of the flip.
+In return, the landlord receives: full transparency on the principals (tax returns and personal financial information on file **before signing**); at Day 90, a clean, capitalized tenant of record, a replacement guarantor, a fresh security deposit, and the existing deposit applied directly to the arrears at the property; **a full mutual release and hold-harmless among all parties — past and future claims, lock-solid in every direction**; a written, eroding monthly payment plan against the remaining ~$100K; and a path to making the property fully current within 6–9 months of the flip.
 
 We are available to walk through the structure, the renderings, and the Phase 1 / Phase 2 plans in person at your convenience.
 
