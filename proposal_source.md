@@ -1,157 +1,147 @@
 ---
-title: "30-12 Astoria Blvd — Forward-Starting Lease Takeover"
+title: "30-12 Astoria Blvd — Direct Lease & Operating Partnership"
 ---
 
 # 30-12 ASTORIA BLVD
 
-## FORWARD-STARTING LEASE TAKEOVER
+## DIRECT LEASE & OPERATING PARTNERSHIP
 
 *Prepared for the Landlord of 30-12 Astoria Blvd*
 
-*Submitted by **NewCo**, the new management company, with the assent of the license holders deemed to be in place.*
+*Submitted by our management group — an experienced cannabis-retail management company, in partnership with a qualified, licensed dispensary operator.*
 
 ---
 
 ## Where Things Stand
 
-Approximately **$100,000 in landlord-side arrears** at the property — back rent, property tax, and unpaid utilities. The current guarantor, **Timothy Derham (Cloud 9 Global)**, is seeking release from his personal guaranty on the lease. The license holders, **Daniel Boland and Kevin Dunn** (CAURD, social-equity qualifying), retain full regulatory standing.
+The current tenant operating the dispensary at 30-12 Astoria Blvd — **Dominica 62** — has reached the end of the road. The entity is in full operational and financial collapse and will not continue as a functioning business. You are moving forward with eviction.
 
-The license holders are aligned with this proposal; their assent is deemed to be in place. **The new management company (NewCo)** is the counterparty bringing the capital, the operating capability, and the commitments below. The practical alternative for the property is months of vacancy with the existing arrears unresolved.
+That leaves the familiar bad set of options: a dark licensed dispensary, months of vacancy, and arrears you'll be chasing against an entity that no longer operates.
 
-This proposal addresses **only** what sits on the landlord's side of the table. Vendor balances, prior staff matters, payroll-tax arrears, software/POS balances, and other operator-level obligations are the existing operating entity's concern and are **not part of this transaction.**
+We are proposing a cleaner path. Rather than re-tenant a distressed, dark box on the open market, **execute a new, direct lease with our management company** — and we will reopen 30-12 Astoria Blvd as a professionally run, fully capitalized dispensary, in partnership with a qualified licensed operator, within weeks of signing.
+
+This is a clean slate: a new lease, a new tenant of record with real capital behind it, an experienced operating team, and a license partner in good standing. The arrears left behind by Dominica 62 stay where they belong — with Dominica 62 — and remain yours to pursue through the eviction. We are not asking you to discount them. We are offering you a materially stronger tenant than the one you're losing.
 
 ---
 
 ## The Proposal — In One Line
 
-**NewCo** takes over operations of the dispensary on day one of the agreement, runs the store through a 90-day window, and at **Day 90 the entire structure flips** — lease, guaranty, security deposit, and arrears resolution all in one coordinated step.
+You execute a **new, direct lease with our management company.** We bring the capital, the operating infrastructure, and a **qualified licensed dispensary partner** — then rebrand and reopen the store fast and run it as a professionally managed cannabis retailer on the corner that should have been working all along.
 
 ---
 
-## Both Sides Locked In
+## Why Us — The Management Team
 
-This is not a 90-day trial. **The forward-starting lease itself is executed at signing — binding on both parties from Day 0.** Only the commencement date is forward-dated. There are no additional lease documents to be finalized later; the lease the landlord signs at Day 0 is the lease that commences at Day 90. The only condition under which the deal can be unwound before Day 90 is a **license-disrupting event** affecting the existing licensees during the window:
+This is the heart of the proposal. The difference between the dispensary that just failed here and the one we will run is not the location — it's who stands behind the counter, and who stands behind the books.
 
-- An OCM enforcement action, suspension, or revocation
-- A criminal investigation or charge that compromises regulatory standing
-- Any regulatory event that prevents licensed operation from the premises
+Our management group brings together three principals with directly relevant, complementary backgrounds across **cannabis retail, payments and transaction processing, banking, and point-of-sale systems** — exactly the disciplines an undercapitalized, inexperienced operator was missing in this space.
 
-In that scenario the deal terminates and both parties revert to status quo ante — the existing tenant remains, the existing guaranty remains, and the new management group's investment in Phase 1 work during the window is its own sunk cost.
+### David Zelinger — Capital Markets, Fintech & Cannabis Operations
 
-There is no financing contingency. There is no inspection-based out. There is no general "good faith" termination right. The deal we sign is the deal we close — the only carve-out is for a regulatory event none of us can underwrite.
+David brings nearly two decades in **capital markets and financial-services technology** to the team. He spent his career building and running the transaction-processing, reconciliation, and risk-control systems the world's largest financial institutions depend on — with senior roles at **Deutsche Bank** (VP, rates-derivatives middle office and client relationship management), **Markit** (Head of Credit Centre Operations), **SmartStream Technologies** (SVP, Head of Professional Services, North America — Transaction Lifecycle Management), **Duco**, and **SS&C Technologies** (Treasury Services), and as **Chief Operating Officer of RTX Financial**, an electronic trading platform. That is a career spent making money move correctly, at scale, under heavy regulatory scrutiny.
 
----
+He brought that discipline into cannabis as a **Board Member of CLS Holdings USA** (a vertically integrated cannabis producer and retailer), as a partner in **SYPP Cloud Bar / Canis Major Partners**, and currently as **General Manager of Jerome Baker Designs**, the iconic American glass brand (est. 1991), leading its 2026 New York retail launch. For a cash-heavy, tightly regulated business, David's mix of institutional-grade financial controls, payments and transaction-processing expertise, and on-the-ground cannabis-retail operating experience is exactly the backbone this venture needs.
 
-## Days 0–90 — Operations Handover and Build-Out
+### Adam Feldman — Retail Operations, Payments & POS
 
-From the day the agreement is signed:
+Adam brings hands-on command of retail operations and the financial infrastructure beneath it — **transaction processing, banking relationships, and point-of-sale systems.** His career has been spent making the money move correctly and the registers ring cleanly: standing up and optimizing POS deployments, building merchant and banking relationships, and managing the payment and cash-handling realities that make or break a high-volume retail floor. In a cash-heavy, tightly regulated category like cannabis, that payments-and-operations fluency is precisely what keeps a store compliant, auditable, and profitable.
 
-- **NewCo takes over operations** of the dispensary. Daniel Boland and Kevin Dunn remain the regulatory licensees; operations are run under a management agreement.
-- **The visible facelift is fast.** Within **five days of taking the keys**, the space matches the renderings already on the proposal site — exterior signage, awning, window graphics, paint, lighting, shelving, and basic finishes. The plans we are committing to are the ones you have already seen.
-- **Continued upgrades** through the remainder of the 90-day window — finishing details, brand build-out, refining what's been started.
-- **Marketing program is deployed** — the larger of the two early budget lines. Local print, bus-shelter QR, social, brand identity, and a real grand-reopening campaign. The space is not the binding constraint; visibility is.
-- **Existing rent obligations continue** unchanged through the window. Tim Derham continues on his existing guaranty until Day 90. The existing tenant entity remains the lessee.
-- **The remaining deliverables for the flip are prepared during the window** — specifically, **a fully agreed Phase 2 plan with the landlord** covering storage build-out, throughput improvements, and any additional capital required, locked in by Day 90. (The lease itself is signed at Day 0, not later. Tax returns and full financial information on each principal are provided **pre-signing**, within days — see Commitments below.)
+### Jerrah Lieberman — Transaction Processing, Banking & Retail Systems
+
+Jerrah pairs front-of-house retail operating experience with the back-office discipline of **transaction processing and banking.** From staffing and merchandising the sales floor to reconciling the books and running POS and processing workflows, Jerrah has handled the day-to-day mechanics of retail at the level where the details decide the margins. That blend — a real merchant's instinct for the floor plus command of the systems behind the counter — translates directly into a dispensary that runs tight, turns inventory, and gives customers a reason to come back.
+
+**Together:** operators who have built and run retail, moved money through compliant rails, deployed and optimized POS, and stood up the banking and processing relationships a cash-heavy, highly regulated business needs to actually function. That is the team taking over this corner.
 
 ---
 
-## Day 90 — The Flip
+## The Operating Structure
 
-A coordinated single-day handoff. All of the following happen together as conditions of closing:
-
-- **The forward-starting lease commences.** The new holding company (signatory at Day 0) becomes the tenant of record. The existing lease arrangement with the prior tenant entity terminates. No legacy baggage.
-- **Tim Derham's personal guaranty terminates.** He walks away clean — no longer carrying long-tail liability on the remaining lease term. *(For Tim, this is the incentive. For the landlord, his guaranty is replaced by a fresh, capitalized one.)*
-- **A full mutual release and hold-harmless is executed** among all parties — landlord, NewCo and its principals, the license holders, the existing operating entity, and Tim Derham. All parties release each other from any past claims related to the property, the lease, and the business; and from any future claims on the business, the revenue, or any interest in the operating entity going forward. Lock-solid, all parties, both directions. Tim walks with no future claim on the business or its revenue; the business walks with no claim against Tim. The landlord is held harmless by all parties on anything pre-flip. No one comes back later.
-- **New personal Good Guy Guaranty** from management principals takes effect. Limited-term, 12–16 months, terminating once the tenant is current on all obligations.
-- **The existing security deposit reverts to the landlord**, applied directly against the back rent, utilities, and property tax arrears at the property.
-- **A fresh security deposit is posted** by the new tenant entity, restoring the landlord's protection on the lease going forward.
-- **A written monthly arrears payment plan begins.** The remaining back rent, utility, and tax balances erode against scheduled payments over the months following the flip.
-- **A sublease is put in place** from the new holding company to the licensed dispensary entity. The holding company is the lessee of record and the source of the personal guaranty; the licensed entity occupies the premises as sublessee.
-
-After Day 90, the landlord holds: a clean tenant of record, a fresh personal guaranty, a fresh security deposit, and an eroding written payment schedule against the remaining ~$100K balance — the entire structural problem at the property resolved in a single coordinated step.
+- **Management company — tenant of record.** Our group signs the new lease directly with you, posts the security deposit, and provides the personal guaranty. We are the party on the hook to the landlord.
+- **Licensed dispensary partner.** We partner with a qualified, licensed retail-dispensary operator — CAURD or otherwise — who holds the OCM license and operates from the premises under a management and services agreement. They bring the license and regulatory standing; we bring the capital, systems, brand, and day-to-day operating capability.
+- **Clean separation from the prior operator.** No assignment of the Dominica 62 lease, no assumption of its liabilities, no entanglement with the entity you are evicting. A new lease and a new business — full stop.
 
 ---
 
-## Phase 1 — The Build-Out (during the 0–90 window)
+## What We Bring — Services & Infrastructure
 
-Modest, focused, and visible:
+The same services and infrastructure we set out to deliver from the start — now on a clean lease, with a partner in good standing:
 
-- **Exterior signage** — illuminated, professional, visible from the corner. A-frame, window graphics.
-- **Interior facelift** — paint, lighting, shelving, finishes. Bringing the room up to where it should have been from day one.
-- **Brand identity** — name, signage, packaging, online presence.
-- **Marketing program** — local advertising, bus-shelter QR, social presence, grand-reopening campaign. The larger of the two early budget lines.
-
-The premise of Phase 1 is that the space does not need a gut renovation. It needs the right tenant, basic finish work, and a serious marketing push to put it on the map.
-
----
-
-## Phase 2 — Strategic Build-Out (post-Day-90)
-
-Targeted capital where it actually moves the business:
-
-- **Storage area build-out** — proper shelving, security, and intake/check-in workflow. The current storage layout is a constraint on inventory handling and turnover.
-- **Throughput improvements** — POS upgrade, checkout flow, fast-pickup lane, cashless processing. Targeted investments in the places where customer flow is currently slowed.
-
-Strategic, not wholesale. The location does not need a wholesale rebuild — it needs a focused capital injection in the places that actually move the business.
+- **Brand, signage & build-out** — the fast facelift described below.
+- **A full marketing program** — local advertising, bus-shelter QR, social, grand-reopening campaign.
+- **Modern POS, payments & cashless / transaction processing.**
+- **Banking & compliant cash-management relationships.**
+- **Inventory management, vendor relationships & merchandising.**
+- **Staffing, training & compliance programs.**
+- **Financial controls & transparent reporting.**
 
 ---
 
-## The Arrears — Landlord-Side Only
+## The Plan
 
-|  Obligation                        |  Estimated     |  Resolution                                                       |
-| ---------------------------------- | -------------- | ----------------------------------------------------------------- |
-|  Back rent                         |  ~$48–64K      |  Existing deposit applied at the flip + monthly payments after   |
-|  Unpaid utilities                  |  ~$10–15K      |  Direct payment from operations post-flip                         |
-|  Property tax arrears (if any)     |  TBD           |  Folded into the monthly payment plan                             |
-|  **Total landlord-side arrears**   |  **~$100K**    |  **Targeted resolution within 6–9 months of the flip**            |
+### Phase 1 — Rebrand & Reopen (fast)
 
-**Out of scope:** vendor balances, service-provider agreements, prior staff matters, payroll-tax arrears, software/POS arrears, and any other operator-level obligations. The new tenant does not assume them. They remain with the existing operating entity. They are not the landlord's concern, and they do not affect this transaction.
+- **Visible facelift within five days of taking the keys** — exterior signage, awning, window graphics, paint, lighting, shelving, finishes. The space matches the renderings on the proposal site. The plans we are committing to are the ones you have already seen.
+- **Marketing program deployed** — the larger of the two early budget lines. The space is not the binding constraint; visibility is.
+- **Systems live** — POS, payments and cashless processing, inventory, compliance, and banking, all stood up at reopening.
+
+### Phase 2 — Strategic Build-Out
+
+- **Storage area build-out** — proper shelving, security, and intake / check-in workflow. The current storage layout is a constraint on inventory handling and turnover.
+- **Throughput improvements** — checkout flow, fast-pickup lane, cashless processing. Targeted investment where customer flow is currently slowed.
+
+Strategic, not wholesale. The location does not need a gut rebuild. It needs the right tenant, basic finish work, a serious marketing push, and focused capital in the places that actually move the business.
 
 ---
 
-## What We Are Committing To
+## The Location — Already Doing the Work
 
-|  Commitment                                                  |  Timing                                  |
-| ------------------------------------------------------------ | ---------------------------------------- |
-|  Tax returns and full financial information (every principal) |  **Pre-signing**, within days, under NDA |
-|  **Forward-starting lease executed; both sides bound**       |  At signing (Day 0)                      |
-|  NewCo takes over operations; keys handed over               |  Day 1                                   |
-|  **Visible facelift complete — matches the renderings already shared** |  Within 5 days of Day 1            |
-|  Continued upgrades and brand build-out                      |  Days 5–90                               |
-|  Phase 2 plan submitted (storage build-out + throughput)     |  Within 45 days                          |
-|  **Phase 2 plan fully agreed with the landlord**             |  By Day 90                               |
-|  **The flip** — forward-starting lease commences; new guaranty, fresh deposit, payment plan |  Day 90 |
-|  **Full mutual release and hold-harmless** — all parties, past and future claims |  At the flip          |
-|  Existing deposit reverts to landlord (against arrears)      |  At the flip                             |
-|  Monthly arrears payments begin                              |  Month 1 post-flip                       |
-|  Phase 2 capital deployed — storage + throughput             |  Months 1–6 post-flip                    |
-|  All landlord-side arrears resolved                          |  Target 6–9 months post-flip             |
+This is not a hopeful pitch about future demand. The customers are already at the door.
+
+Even under the management that just collapsed — cash-only, no sign, no marketing — this location did roughly **$37,500 in January 2026**, about $9K of it over a single warm-weather weekend. That is the floor, set by an operator that *failed*. Run properly, the upside is substantial:
+
+|  Driver                          |  Figure                                                          |
+| -------------------------------- | ---------------------------------------------------------------- |
+|  Bus traffic at the door         |  5 MTA routes stop in front (Q18, Q19, Q100, Q101, M60-SBS to LaGuardia 24/7) |
+|  Subway one block away           |  10–14K N/W riders daily                                         |
+|  Immediate ZIP                   |  37K+ residents · median income $97K · median age 37 · 60% college-educated |
+|  Proven revenue floor            |  ~$37,500/mo while mismanaged, cash-only, unmarketed             |
+|  **Target, run properly**        |  **$100–150K / month within ~6 months of relaunch**             |
+
+At that level, rent is comfortably covered with substantial margin, and you hold an anchor tenant for the balance of the lease term.
+
+---
+
+## Lease & Terms — A Clean, Direct Lease
+
+- **A new, direct lease** between you and our management company at market terms. No forward-dating, no contingency on the prior tenant, no legacy baggage.
+- **Fresh security deposit** posted at signing.
+- **Personal guaranty** from the management principals — a real, capitalized guaranty, not the one walking out the door.
+- **Full financial transparency** — tax returns and personal financial information on every principal, provided under NDA before signing.
+- **Arrears stay with Dominica 62.** The back rent, utilities, and tax left by the prior tenant remain its obligation and yours to pursue through the eviction. We do not assume them, and they do not burden the new lease.
 
 ---
 
 ## Why This Beats the Alternatives
 
-**Versus eviction.** Months of vacancy. No recovery of arrears. The space sits empty, and the landlord still has to find a replacement tenant — without the existing deposit, without the new capital, without the new guaranty.
+**Versus a dark box on the open market.** Months of vacancy, no rent, and marketing the space cold to unknown operators — most of whom cannot show capital, a guaranty, an operating team, and a license partner on day one. We can.
 
-**Versus continued operation by the current group.** A continuation of the trajectory that produced the current arrears.
+**Versus another distressed operator.** You just watched undercapitalized, inexperienced operators fail in this exact space. We are the opposite profile: capital, seasoned fintech and retail operators, and a licensed partner in good standing.
 
-**Versus a different operator at arm's length.** Any credible operator coming in cold would demand visibility into license stability before committing capital. The 90-day forward structure is precisely what makes it possible to commit on paper today, sign a binding lease, and put real capital into the space — while leaving a single, narrow exit for the one risk no one can underwrite, a regulatory event at the licensee level.
+**Versus chasing Dominica 62.** Eviction recovers the box, not the business. Our lease puts a paying, capitalized, professionally managed tenant in it — starting now.
 
 ---
 
 ## What We Are Asking
 
-- **A binding forward-starting lease, signed now**, with the flip at Day 90 on the structure above.
-- **Application of the existing security deposit** toward landlord-side arrears at the flip.
-- **Forbearance on the remaining arrears** during the 90-day window and post-flip, against the written eroding payment plan.
-- **No eviction proceedings** during the pre-flip window or the post-flip stabilization period, provided current rent and arrears payments continue per schedule.
-- **A defined, narrow out clause** — license-disrupting events only. In that scenario the deal terminates and both parties revert to status quo.
+- Execute a **new, direct lease** with our management company at market terms.
+- Accept our **fresh security deposit and personal guaranty** in place of the departing tenant's.
+- Proceed with the **eviction of Dominica 62** as planned; we step in clean behind it.
 
-In return, the landlord receives: full transparency on the principals (tax returns and personal financial information on file **before signing**); at Day 90, a clean, capitalized tenant of record, a replacement guarantor, a fresh security deposit, and the existing deposit applied directly to the arrears at the property; **a full mutual release and hold-harmless among all parties — past and future claims, lock-solid in every direction**; a written, eroding monthly payment plan against the remaining ~$100K; and a path to making the property fully current within 6–9 months of the flip.
+In return, the landlord receives: full transparency on every principal **before signing**; a capitalized tenant of record; a fresh deposit and a fresh personal guaranty; an experienced management team paired with a licensed operating partner; and a professionally run dispensary on a corner that — even badly managed — was already generating revenue.
 
-We are available to walk through the structure, the renderings, and the Phase 1 / Phase 2 plans in person at your convenience.
+We are available to walk through the team, the structure, and the renderings in person at your convenience.
 
 ---
 
-**The New Management Company** *(NewCo)*
-*with the assent of the license holders deemed to be in place: Daniel Boland and Kevin Dunn (CAURD, social-equity qualifying)*
+**Our Management Company** *(entity name to be confirmed)*
+*David Zelinger · Adam Feldman · Jerrah Lieberman — in partnership with a qualified, licensed dispensary operator.*
