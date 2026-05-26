@@ -200,6 +200,33 @@
 </head>
 <body>
 
+<!-- PASSWORD GATE -->
+<div id="gate" style="position:fixed;inset:0;z-index:9999;background:#0a0b0d;display:flex;align-items:center;justify-content:center;font-family:'Inter',system-ui,sans-serif;">
+  <form id="gate-form" style="width:min(360px,88vw);text-align:center;">
+    <div style="font-family:'Fraunces',serif;font-weight:700;font-size:22px;color:#f4f3ee;letter-spacing:.5px;margin-bottom:6px;">30-12 <span style="color:#d8ff3e;">Astoria</span></div>
+    <p style="color:#a7a59c;font-size:13px;margin:0 0 22px;letter-spacing:1px;text-transform:uppercase;">Private — enter access code</p>
+    <input id="gate-pw" type="password" autocomplete="off" autofocus placeholder="Access code"
+      style="width:100%;padding:13px 15px;border-radius:10px;border:1px solid #1f2227;background:#111316;color:#f4f3ee;font-size:15px;outline:none;text-align:center;letter-spacing:2px;">
+    <button type="submit"
+      style="width:100%;margin-top:12px;padding:12px;border:0;border-radius:999px;background:#d8ff3e;color:#0a0b0d;font-weight:600;font-size:14px;cursor:pointer;">Enter</button>
+    <p id="gate-err" style="color:#ff8a8a;font-size:12px;height:14px;margin:10px 0 0;visibility:hidden;">Incorrect code.</p>
+  </form>
+</div>
+<script>
+(function(){
+  var KEY='astoria_gate_v1', PW='NEWCO!';
+  var gate=document.getElementById('gate');
+  function unlock(){ gate.parentNode.removeChild(gate); document.body.style.overflow=''; }
+  if(sessionStorage.getItem(KEY)==='1'){ unlock(); return; }
+  document.body.style.overflow='hidden';
+  document.getElementById('gate-form').addEventListener('submit',function(e){
+    e.preventDefault();
+    if(document.getElementById('gate-pw').value===PW){ sessionStorage.setItem(KEY,'1'); unlock(); }
+    else { document.getElementById('gate-err').style.visibility='visible'; document.getElementById('gate-pw').select(); }
+  });
+})();
+</script>
+
 <nav>
   <div class="nav-inner">
     <a href="#top" class="nav-mark">30-12 <span>Astoria</span></a>
